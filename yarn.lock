@@ -1183,6 +1183,7 @@ __metadata:
     prettier: ^2.6.1
     react: 17.0.2
     react-dom: 17.0.2
+    tailwind-dracula: ^1.1.0
     tailwindcss: ^3.0.23
     typescript: 4.6.3
   languageName: unknown
@@ -4443,6 +4444,15 @@ __metadata:
   version: 1.0.0
   resolution: "supports-preserve-symlinks-flag@npm:1.0.0"
   checksum: 53b1e247e68e05db7b3808b99b892bd36fb096e6fba213a06da7fab22045e97597db425c724f2bbd6c99a3c295e1e73f3e4de78592289f38431049e1277ca0ae
+  languageName: node
+  linkType: hard
+
+"tailwind-dracula@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "tailwind-dracula@npm:1.1.0"
+  peerDependencies:
+    tailwindcss: 2.x || 3.x
+  checksum: 589755ed07186d8b3d7d5ce516f7d82a376213a21dbf47322d52e0194ea76f376d0bd960ca50a7e64576f4dd8a5019c9ca7f81a373e2a000ba32c97049e8bfef
   languageName: node
   linkType: hard
 
