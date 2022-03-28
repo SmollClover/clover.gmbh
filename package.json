@@ -37,7 +37,9 @@
 	},
 	"lint-staged": {
 		"*.ts": "prettier --write",
-		"*.js": "prettier --write"
+		"*.js": "prettier --write",
+		"*.tsx": "prettier --write",
+		"*.jsx": "prettier --write"
 	},
 	"commitlint": {
 		"extends": [
