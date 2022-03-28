@@ -1,0 +1,8 @@
+dist
+.pnp.js
+.yarn/*
+.github/
+
+out/
+build/
+.next/
