@@ -1,5 +1,11 @@
-function projects() {
-	return <div className="p-4">projects</div>;
-}
+import type { NextPage } from 'next';
 
-export default projects;
+const Project: NextPage = () => {
+	return (
+		<div>
+			<h1>Project!</h1>
+		</div>
+	);
+};
+
+export default Project;

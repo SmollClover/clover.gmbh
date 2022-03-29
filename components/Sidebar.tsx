@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FaGithubAlt, FaLinkedin } from 'react-icons/fa';
-import { MdComputer, MdLocationOn } from 'react-icons/md';
+import { MdLocationOn } from 'react-icons/md';
 
 const Sidebar = () => {
 	return (
@@ -18,7 +18,7 @@ const Sidebar = () => {
 						Lars Belitz
 					</h3>
 					<p className="flex items-center justify-center px-2 py-1 my-3 rounded-full bg-darker-600">
-						<MdComputer className="w-6 h-6 mr-1" /> Typescript Developer
+						Typescript Developer
 					</p>
 
 					<div className="flex justify-around w-9/12 mx-auto my-5 text-white md:w-full">

@@ -1,5 +1,11 @@
-function resume() {
-	return <div className="p-4">resume</div>;
-}
+import type { NextPage } from 'next';
 
-export default resume;
+const Resume: NextPage = () => {
+	return (
+		<div>
+			<h1>Resume</h1>
+		</div>
+	);
+};
+
+export default Resume;
