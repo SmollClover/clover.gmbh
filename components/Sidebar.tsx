@@ -42,7 +42,7 @@ const Sidebar = () => {
 
 			<div className="p-4 bg-dark rounded-2xl">
 				<button
-					className="w-8/12 px-5 py-2 my-2 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 focus:outline-none"
+					className="w-8/12 px-5 py-2 my-2 rounded-full bg-gradient-to-r from-pink-400 to-purple-400 focus:outline-none"
 					onClick={() => window.open('mailto:clover@duck.com')}
 				>
 					Email me
