@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 				<div className="grid gap-6 lg:grid-cols-2">
 					{Services.map((service) => {
 						return (
-							<div key={service.id} className="rounded-lg lg:col-span-1 bg-darker-600">
+							<div key={service.title} className="rounded-lg lg:col-span-1 bg-darker-600">
 								<ServiceCard service={service} />
 							</div>
 						);
