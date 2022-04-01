@@ -1,5 +1,5 @@
 import ServiceCard from '../components/ServiceCard';
-import { Services } from '../data';
+import { Services } from '../data/services';
 
 import type { NextPage } from 'next';
 

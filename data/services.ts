@@ -1,6 +1,6 @@
 import { MdComputer } from 'react-icons/md';
 
-import { Service } from './interface/Service';
+import { Service } from '../interface/Service';
 
 export const Services: Array<Service> = [
 	{
