@@ -8,7 +8,7 @@ const Sidebar = () => {
 			<div className="p-4 bg-dark rounded-2xl">
 				<div>
 					<Image
-						src="/clover.png"
+						src="/image/Clover.png"
 						alt="Clover Profile Picture"
 						height="1028"
 						width="1028"

@@ -1,31 +1,31 @@
 import { BsCircleFill } from 'react-icons/bs';
 
-import { Skill } from '../interface/Skill';
+import { Language } from '../interface/Language';
 
-export const Languages: Array<Skill> = [
+export const languages: Array<Language> = [
 	{
 		name: 'TypeScript',
 		level: '75%',
-		SIcon: BsCircleFill,
+		LIcon: BsCircleFill,
 	},
 	{
 		name: 'JavaScript (NodeJS)',
 		level: '80%',
-		SIcon: BsCircleFill,
+		LIcon: BsCircleFill,
 	},
 	{
 		name: 'JavaScript (Browser)',
 		level: '65%',
-		SIcon: BsCircleFill,
+		LIcon: BsCircleFill,
 	},
 	{
 		name: 'Python',
 		level: '25%',
-		SIcon: BsCircleFill,
+		LIcon: BsCircleFill,
 	},
 	{
 		name: 'HTML & CSS',
 		level: '40%',
-		SIcon: BsCircleFill,
+		LIcon: BsCircleFill,
 	},
 ];

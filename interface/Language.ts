@@ -1,7 +1,7 @@
 import { IconType } from 'react-icons';
 
-export interface Skill {
+export interface Language {
 	name: string;
 	level: string;
-	SIcon: IconType;
+	LIcon: IconType;
 }
