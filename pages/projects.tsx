@@ -5,22 +5,16 @@ import { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import ProjectNavbar from '../components/ProjectNavbar';
 import { fadeInUp, routeAnimation, stagger } from '../data/animations';
-import { projects as projectsData } from '../data/projects';
+import { projects } from '../data/projects';
 import { Category } from '../interface/Project';
 
 import type { NextPage } from 'next';
 const Project: NextPage = () => {
-	const [projects, setProjects] = useState(projectsData);
-	const [active, setActive] = useState('all');
+	const [filter, setFilter] = useState<null | Category>(null);
 
 	const [showDetail, setShowDetail] = useState('');
 
-	const handlerFilterCategory = (category: Category | 'all') => {
-		setActive(category);
-
-		if (category === 'all') return setProjects(projectsData);
-		return setProjects(projectsData.filter((project) => project.categories.includes(category)));
-	};
+	const handlerFilterCategory = (category: Category) => setFilter(category);
 
 	return (
 		<motion.div
@@ -36,16 +30,11 @@ const Project: NextPage = () => {
 				<meta property="og:title" content="Lars Belitz - Projects" key="title" />
 			</Head>
 
-			<ProjectNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
+			<ProjectNavbar handlerFilterCategory={handlerFilterCategory} active={filter} />
 
-			<motion.div
-				variants={stagger}
-				initial="initial"
-				animate="animate"
-				className="relative grid grid-cols-12 gap-4 my-3"
-			>
+			<motion.div variants={stagger} className="relative grid grid-cols-12 gap-4 my-3">
 				{projects.map((value) => {
-					return (
+					return value.categories.includes(filter) || !filter ? (
 						<motion.div
 							variants={fadeInUp}
 							key={value.name}
@@ -53,7 +42,7 @@ const Project: NextPage = () => {
 						>
 							<ProjectCard project={value} showDetail={showDetail} setShowDetail={setShowDetail} />
 						</motion.div>
-					);
+					) : null;
 				})}
 			</motion.div>
 		</motion.div>

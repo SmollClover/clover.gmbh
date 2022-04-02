@@ -3,9 +3,9 @@ import { FunctionComponent } from 'react';
 import { Category } from '../interface/Project';
 
 export const NavItem: FunctionComponent<{
-	value: Category | 'all';
+	value: Category;
 	handlerFilterCategory: Function;
-	active: string;
+	active: Category;
 }> = ({ value, handlerFilterCategory, active }) => {
 	let className = 'px-5 capitalize rounded-full cursor-pointer bg-darker-600 from-pink-400 to-purple-400';
 
@@ -13,18 +13,18 @@ export const NavItem: FunctionComponent<{
 
 	return (
 		<li onClick={() => handlerFilterCategory(value)} className={className}>
-			{value}
+			{value ? value : 'all'}
 		</li>
 	);
 };
 
 const ProjectNavbar: FunctionComponent<{
 	handlerFilterCategory: Function;
-	active: string;
+	active: Category;
 }> = (props) => {
 	return (
 		<div className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
-			<NavItem value="all" {...props} />
+			<NavItem value={null} {...props} />
 			<NavItem value="discord bot" {...props} />
 			<NavItem value="website" {...props} />
 			<NavItem value="application" {...props} />
