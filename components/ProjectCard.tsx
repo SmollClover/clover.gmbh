@@ -1,7 +1,9 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FunctionComponent, useState } from 'react';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md';
+import { fadeInUp, stagger } from '../data/animations';
 
 import { Project } from '../interface/Project';
 
@@ -25,48 +27,61 @@ const ProjectCard: FunctionComponent<{
 
 			{showDetail && (
 				<div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 rounded-2xl md:grid-cols-2 gap-x-12 bg-darker-800">
-					<div>
-						<Image
-							className="rounded-2xl"
-							src={imagePath}
-							alt={name}
-							width={512}
-							height={288}
-							layout="responsive"
-						/>
+					<motion.div variants={stagger} initial="initial" animate="animate">
+						<motion.div variants={fadeInUp}>
+							<Image
+								className="rounded-2xl"
+								src={imagePath}
+								alt={name}
+								width={512}
+								height={288}
+								layout="responsive"
+							/>
+						</motion.div>
+
 						<div className="flex justify-center my-4 space-x-3">
-							<a
+							<motion.a
+								variants={fadeInUp}
 								href={githubUrl}
 								className="flex items-center px-4 py-2 space-x-3 text-lg rounded-full bg-gradient-to-r from-pink-400 to-purple-400"
 							>
 								<AiFillGithub />
 								<span>Github</span>
-							</a>
+							</motion.a>
 							{deployUrl && (
-								<a
+								<motion.a
+									variants={fadeInUp}
 									href={deployUrl}
 									className="flex items-center px-4 py-2 space-x-3 text-lg rounded-full bg-gradient-to-r from-pink-400 to-purple-400"
 								>
 									<AiFillProject />
 									<span>Project</span>
-								</a>
+								</motion.a>
 							)}
 						</div>
-					</div>
+					</motion.div>
 
-					<div>
-						<h2 className="mb-3 text-xl font-medium md:text-2xl">{name}</h2>
-						<h3 className="mb-3 font-medium ">{description}</h3>
+					<motion.div variants={stagger} initial="initial" animate="animate">
+						<motion.h2 variants={fadeInUp} className="mb-3 text-xl font-medium md:text-2xl">
+							{name}
+						</motion.h2>
+						<motion.h3 variants={fadeInUp} className="mb-3 font-medium ">
+							{description}
+						</motion.h3>
 						<div className="flex flex-wrap mt-5 space-x-2 text-sm tracking-wider">
 							{keys.map((key) => {
 								return (
-									<span className="px-2 py-1 my-1 rounded-sm bg-dark-600" key={key}>
+									<motion.span
+										variants={fadeInUp}
+										className="px-2 py-1 my-1 rounded-sm bg-dark-600"
+										key={key}
+									>
 										{key}
-									</span>
+									</motion.span>
 								);
 							})}
 						</div>
-					</div>
+					</motion.div>
 
 					<button
 						onClick={() => setShowDetail(false)}

@@ -1,4 +1,7 @@
+import { motion } from 'framer-motion';
+
 import Bar from '../components/Bar';
+import { fadeInUp, routeAnimation } from '../data/animations';
 import { languages } from '../data/languages';
 import { tools } from '../data/tools';
 
@@ -6,22 +9,22 @@ import type { NextPage } from 'next';
 
 const Resume: NextPage = () => {
 	return (
-		<div className="px-6 py-2">
+		<motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" className="px-6 py-2">
 			<div className="grid gap-6 md:grid-cols-2">
-				<div>
+				<motion.div variants={fadeInUp} initial="initial" animate="animate">
 					<h5 className="my-3 text-2xl font-bold">Education</h5>
 					<div>
 						<h5 className="my-2 text-xl font-bold">Application Development</h5>
 						<p className="font-semibold">Heinrich-Hertz-Berufskolleg (2021 - today)</p>
 					</div>
-				</div>
-				{/* <div>
+				</motion.div>
+				<motion.div variants={fadeInUp} initial="initial" animate="animate">
 					<h5 className="my-3 text-2xl font-bold">Experience</h5>
 					<div>
-						<h5 className="my-2 text-xl font-bold">None</h5>
+						<h5 className="my-2 text-xl font-bold">None, yet</h5>
 						<p className="font-semibold"></p>
 					</div>
-				</div> */}
+				</motion.div>
 			</div>
 
 			<div className="grid gap-6 md:grid-cols-2">
@@ -42,7 +45,7 @@ const Resume: NextPage = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

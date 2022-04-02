@@ -20,12 +20,12 @@ export const tools: Array<Tools> = [
 	},
 	{
 		name: 'Fisher',
-		level: '35%',
+		level: '45%',
 		LIcon: BsCircleFill,
 	},
 	{
 		name: 'Oh my Fish',
-		level: '32%',
+		level: '40%',
 		LIcon: BsCircleFill,
 	},
 ];

@@ -1,13 +1,13 @@
 import '../styles/globals.css';
 
+import { AnimatePresence } from 'framer-motion';
 import { useEffect } from 'react';
 
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 
 import type { AppProps } from 'next/app';
-
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
 	useEffect(() => {
 		document.body.classList.add('bg-darker');
 		document.body.classList.add('text-white');
@@ -22,8 +22,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<div className="mb-7 bg-dark rounded-2xl">
 					<Navbar />
 				</div>
+
 				<div className="flex-grow bg-dark rounded-2xl">
-					<Component {...pageProps} />
+					<AnimatePresence exitBeforeEnter>
+						<Component {...pageProps} key={router.route} />
+					</AnimatePresence>
 				</div>
 			</div>
 		</div>
