@@ -9,23 +9,23 @@ import { Project } from '../interface/Project';
 
 const ProjectCard: FunctionComponent<{
 	project: Project;
-}> = ({ project: { name, description, imagePath, deployUrl, githubUrl, categories, keys } }) => {
-	const [showDetail, setShowDetail] = useState(false);
-
+	showDetail: string;
+	setShowDetail: Function;
+}> = ({ project: { name, description, imagePath, deployUrl, githubUrl, categories, keys }, showDetail, setShowDetail }) => {
 	return (
 		<div className="rounded-2xl bg-darker-800">
 			<Image
 				src={imagePath}
 				alt={name}
 				className="cursor-pointer rounded-2xl"
-				onClick={() => setShowDetail(true)}
+				onClick={() => setShowDetail(name)}
 				width={512}
 				height={288}
 				layout="responsive"
 			/>
 			<p className="my-2 text-center">{name}</p>
 
-			{showDetail && (
+			{showDetail === name && (
 				<div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 rounded-2xl md:grid-cols-2 gap-x-12 bg-darker-800">
 					<motion.div variants={stagger} initial="initial" animate="animate">
 						<motion.div variants={fadeInUp}>
@@ -84,7 +84,7 @@ const ProjectCard: FunctionComponent<{
 					</motion.div>
 
 					<button
-						onClick={() => setShowDetail(false)}
+						onClick={() => setShowDetail('')}
 						className="absolute p-1 rounded-full top-3 right-3 focus:outline-none"
 					>
 						<MdClose size={30} />

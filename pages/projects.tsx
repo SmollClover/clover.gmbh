@@ -12,6 +12,8 @@ const Project: NextPage = () => {
 	const [projects, setProjects] = useState(projectsData);
 	const [active, setActive] = useState('all');
 
+	const [showDetail, setShowDetail] = useState('');
+
 	const handlerFilterCategory = (category: Category | 'all') => {
 		setActive(category);
 
@@ -43,7 +45,7 @@ const Project: NextPage = () => {
 							key={value.name}
 							className="col-span-12 p-2 sm:col-span-6 lg:col-span-4"
 						>
-							<ProjectCard project={value} />
+							<ProjectCard project={value} showDetail={showDetail} setShowDetail={setShowDetail} />
 						</motion.div>
 					);
 				})}
