@@ -3,3 +3,13 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+
+::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to right bottom, #ff79c6, #bd93f9);
+	border-radius: 100vh;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 0px;
+}
