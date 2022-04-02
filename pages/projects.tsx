@@ -32,7 +32,7 @@ const Project: NextPage = () => {
 			style={{ height: '57vh' }}
 		>
 			<Head>
-				<title>Clover - Projects</title>
+				<title>Lars Belitz - Projects</title>
 			</Head>
 			<ProjectNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
 

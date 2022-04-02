@@ -11,7 +11,7 @@ const Resume: NextPage = () => {
 	return (
 		<motion.div variants={routeAnimation} initial="initial" animate="animate" exit="exit" className="px-6 py-2">
 			<Head>
-				<title>Clover - Resume</title>
+				<title>Lars Belitz - Resume</title>
 			</Head>
 			<div className="grid gap-6 md:grid-cols-2">
 				<motion.div variants={fadeInUp} initial="initial" animate="animate">

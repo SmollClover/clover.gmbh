@@ -1,24 +1,14 @@
 import '../styles/globals.css';
 
 import { AnimatePresence } from 'framer-motion';
-import Head from 'next/head';
-import { useEffect } from 'react';
 
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 
 import type { AppProps } from 'next/app';
 function MyApp({ Component, pageProps, router }: AppProps) {
-	useEffect(() => {
-		document.body.classList.add('bg-darker');
-		document.body.classList.add('text-white');
-	});
-
 	return (
 		<div className="grid grid-cols-12 gap-6 px-5 lg:px-48 my-14 sm:px-20 md:px-32">
-			<Head>
-				<title>Clover</title>
-			</Head>
 			<div className="col-span-12 text-center lg:col-span-3">
 				<Sidebar />
 			</div>

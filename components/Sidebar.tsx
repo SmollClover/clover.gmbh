@@ -24,10 +24,10 @@ const Sidebar = () => {
 
 					<div className="flex justify-around w-9/12 mx-auto my-5 text-white md:w-full">
 						<a href="https://github.com/SmollClover" target="_blank" rel="noreferrer">
-							<FaGithubAlt className="w-8 h-8 cursor-pointer" />
+							<FaGithubAlt title="Github" className="w-8 h-8 cursor-pointer" />
 						</a>
 						<a href="https://www.linkedin.com/in/lars-belitz-5814b6224/" target="_blank" rel="noreferrer">
-							<FaLinkedin className="w-8 h-8 cursor-pointer" />
+							<FaLinkedin title="Linkedin" className="w-8 h-8 cursor-pointer" />
 						</a>
 					</div>
 				</div>
