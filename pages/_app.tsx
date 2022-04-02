@@ -1,9 +1,11 @@
 import '../styles/globals.css';
-import { useEffect } from 'react';
-import type { AppProps } from 'next/app';
 
-import Sidebar from '../components/Sidebar';
+import { useEffect } from 'react';
+
 import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
+
+import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	useEffect(() => {

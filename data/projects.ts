@@ -6,7 +6,7 @@ export const projects: Array<Project> = [
 		description: 'A Ticket Managing Discord Bot that uses the Thread feature',
 		imagePath: '/image/Hiko.png',
 		githubUrl: 'https://github.com/SmollClover/Hiko',
-		categories: ['discord-bot'],
+		categories: ['discord bot'],
 		keys: ['Discord', 'NodeJS', 'Bot', 'Moderation'],
 	},
 	{
@@ -14,7 +14,7 @@ export const projects: Array<Project> = [
 		description: 'A automated Anti-Raid Discord Bot',
 		imagePath: '/image/Yagi.png',
 		githubUrl: 'https://github.com/SmollClover/Yagi',
-		categories: ['discord-bot'],
+		categories: ['discord bot'],
 		keys: ['Discord', 'NodeJS', 'Bot', 'Moderation'],
 	},
 	{

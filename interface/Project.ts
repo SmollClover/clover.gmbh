@@ -1,4 +1,4 @@
-export type Category = 'discord-bot' | 'website' | 'application' | 'tool' | 'fun' | 'other';
+export type Category = 'discord bot' | 'website' | 'application' | 'tool' | 'fun' | 'other';
 
 export interface Project {
 	name: string;

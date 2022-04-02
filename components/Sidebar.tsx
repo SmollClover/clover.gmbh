@@ -9,9 +9,10 @@ const Sidebar = () => {
 				<div>
 					<Image
 						src="/image/Clover.png"
-						alt="Clover Profile Picture"
-						height="1028"
-						width="1028"
+						alt="Avatar"
+						height={512}
+						width={512}
+						quality={100}
 						className="w-32 h-32 mx-auto rounded-full"
 					/>
 					<h3 className="my-4 text-3xl font-medium tracking-wider" style={{ fontFamily: 'Prompt-Light, sans-serif' }}>

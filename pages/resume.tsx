@@ -1,9 +1,8 @@
-import type { NextPage } from 'next';
-
 import Bar from '../components/Bar';
-
 import { languages } from '../data/languages';
 import { tools } from '../data/tools';
+
+import type { NextPage } from 'next';
 
 const Resume: NextPage = () => {
 	return (

@@ -11,21 +11,29 @@ const ProjectCard: FunctionComponent<{
 	const [showDetail, setShowDetail] = useState(false);
 
 	return (
-		<div>
+		<div className="rounded-2xl bg-darker-800">
 			<Image
 				src={imagePath}
 				alt={name}
 				className="cursor-pointer rounded-2xl"
-				width={256}
-				height={256}
 				onClick={() => setShowDetail(true)}
+				width={512}
+				height={288}
+				layout="responsive"
 			/>
 			<p className="my-2 text-center">{name}</p>
 
 			{showDetail && (
-				<div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 md:grid-cols-2 gap-x-12 bg-darker-800">
+				<div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 rounded-2xl md:grid-cols-2 gap-x-12 bg-darker-800">
 					<div>
-						<Image className="rounded-2xl" src={imagePath} alt={name} width={256} height={256} />
+						<Image
+							className="rounded-2xl"
+							src={imagePath}
+							alt={name}
+							width={512}
+							height={288}
+							layout="responsive"
+						/>
 						<div className="flex justify-center my-4 space-x-3">
 							<a
 								href={githubUrl}
