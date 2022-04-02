@@ -17,6 +17,7 @@ const Home: NextPage = () => {
 		>
 			<Head>
 				<title>Lars Belitz - About</title>
+				<meta property="og:title" content="Lars Belitz - About" key="title" />
 			</Head>
 			<h5 className="my-3">
 				I am currently in training to become an IT specialist in the firld of application development. I have over 4

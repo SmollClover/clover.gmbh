@@ -33,7 +33,9 @@ const Project: NextPage = () => {
 		>
 			<Head>
 				<title>Lars Belitz - Projects</title>
+				<meta property="og:title" content="Lars Belitz - Projects" key="title" />
 			</Head>
+
 			<ProjectNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
 
 			<motion.div
