@@ -5,7 +5,7 @@ export interface Project {
 	description: string;
 	imagePath: string;
 	deployUrl?: string;
-	githubUrl: string;
+	githubUrl?: string;
 	categories: Array<Category>;
 	keys: Array<string>;
 }

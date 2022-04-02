@@ -18,6 +18,15 @@ export const projects: Array<Project> = [
 		keys: ['Discord', 'NodeJS', 'Bot', 'Moderation'],
 	},
 	{
+		name: 'Print Screen',
+		description:
+			'A Online Hosted Screenshotting Service where Users can Upload Pictures through ShareX to then receive a Link to the then online hosted Image',
+		imagePath: '/image/Print-Screen.png',
+		deployUrl: 'https://print-screen.dev/',
+		categories: ['website'],
+		keys: ['Screenshotting Service', 'Website', 'Public', 'ShareX'],
+	},
+	{
 		name: 'Vocalhooks',
 		description: "A Webserver that's designed to listen for requests and then do certain Actions defined in a file",
 		imagePath: '/image/Placeholder.png',

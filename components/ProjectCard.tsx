@@ -40,18 +40,24 @@ const ProjectCard: FunctionComponent<{
 						</motion.div>
 
 						<div className="flex justify-center my-4 space-x-3">
-							<motion.a
-								variants={fadeInUp}
-								href={githubUrl}
-								className="flex items-center px-4 py-2 space-x-3 text-lg rounded-full bg-gradient-to-r from-pink-400 to-purple-400"
-							>
-								<AiFillGithub />
-								<span>Github</span>
-							</motion.a>
+							{githubUrl && (
+								<motion.a
+									variants={fadeInUp}
+									href={githubUrl}
+									target="_blank"
+									rel="noreferrer"
+									className="flex items-center px-4 py-2 space-x-3 text-lg rounded-full bg-gradient-to-r from-pink-400 to-purple-400"
+								>
+									<AiFillGithub />
+									<span>Github</span>
+								</motion.a>
+							)}
 							{deployUrl && (
 								<motion.a
 									variants={fadeInUp}
 									href={deployUrl}
+									target="_blank"
+									rel="noreferrer"
 									className="flex items-center px-4 py-2 space-x-3 text-lg rounded-full bg-gradient-to-r from-pink-400 to-purple-400"
 								>
 									<AiFillProject />
