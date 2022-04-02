@@ -21,7 +21,7 @@ class MyDocument extends Document {
 						content="TypeScript Developer who started out with programming Discord Bots and now has over 4 years of experience with JavaScript."
 						key="description"
 					/>
-					<meta name="theme-color" content="#ff79c6" key="theme-color" />
+					<meta name="theme-color" content="#bd93f9" key="theme-color" />
 				</HeadCSP>
 				<body className="text-white bg-fixed bg-darker">
 					<Main />
