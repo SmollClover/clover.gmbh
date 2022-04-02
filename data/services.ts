@@ -5,12 +5,12 @@ import { Service } from '../interface/Service';
 export const Services: Array<Service> = [
 	{
 		title: 'Discord Bots',
-		description: 'I\'ve been programming Discord Bots for 4 years now, so I\'ve learned how to properly do it.',
+		description: "I've been programming Discord Bots for 4 years now, so I've learned how to properly do it.",
 		SIcon: FaRobot,
 	},
 	{
 		title: 'Websites',
-		description: 'I\'m capable of building very small Websites that serve simple purposes.',
+		description: "I'm capable of building very small Websites that serve simple purposes.",
 		SIcon: FaCloud,
 	},
 	{
