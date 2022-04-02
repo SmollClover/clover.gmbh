@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 
 import ServiceCard from '../components/ServiceCard';
 import { fadeInUp, routeAnimation, stagger } from '../data/animations';
@@ -14,6 +15,9 @@ const Home: NextPage = () => {
 			exit="exit"
 			className="flex flex-col px-6 pt-1"
 		>
+			<Head>
+				<title>Clover - About</title>
+			</Head>
 			<h5 className="my-3">
 				I am currently in training to become an IT specialist in the firld of application development. I have over 4
 				years of personal experience by tinkering and creating some Bots for the online messaging plattform Discord

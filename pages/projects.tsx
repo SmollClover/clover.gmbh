@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 import { useState } from 'react';
 
 import ProjectCard from '../components/ProjectCard';
@@ -30,6 +31,9 @@ const Project: NextPage = () => {
 			className="px-5 py-2 overflow-y-auto"
 			style={{ height: '57vh' }}
 		>
+			<Head>
+				<title>Clover - Projects</title>
+			</Head>
 			<ProjectNavbar handlerFilterCategory={handlerFilterCategory} active={active} />
 
 			<motion.div
