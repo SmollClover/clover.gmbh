@@ -18,13 +18,13 @@ const Resume: NextPage = () => {
 						<p className="font-semibold">Heinrich-Hertz-Berufskolleg (2021 - today)</p>
 					</div>
 				</motion.div>
-				<motion.div variants={fadeInUp} initial="initial" animate="animate">
+				{/* <motion.div variants={fadeInUp} initial="initial" animate="animate">
 					<h5 className="my-3 text-2xl font-bold">Experience</h5>
 					<div>
 						<h5 className="my-2 text-xl font-bold">None, yet</h5>
 						<p className="font-semibold"></p>
 					</div>
-				</motion.div>
+				</motion.div> */}
 			</div>
 
 			<div className="grid gap-6 md:grid-cols-2">
