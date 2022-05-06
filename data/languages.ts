@@ -20,7 +20,7 @@ export const languages: Array<Language> = [
 	},
 	{
 		name: 'Python',
-		level: '35%',
+		level: '60%',
 		LIcon: BsCircleFill,
 	},
 	{
