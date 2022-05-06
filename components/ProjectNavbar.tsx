@@ -28,6 +28,7 @@ const ProjectNavbar: FunctionComponent<{
 			<NavItem value="discord bot" {...props} />
 			<NavItem value="website" {...props} />
 			<NavItem value="application" {...props} />
+			<NavItem value="school" {...props} />
 			<NavItem value="tool" {...props} />
 			<NavItem value="fun" {...props} />
 			<NavItem value="other" {...props} />
