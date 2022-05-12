@@ -46,7 +46,7 @@ export const projects: Array<Project> = [
 	{
 		name: 'Vocalhooks',
 		description: "A Webserver that's designed to listen for requests and then do certain Actions defined in a file",
-		imagePath: '/image/Placeholder.png',
+		imagePath: '/image/Vocalhooks.png',
 		githubUrl: 'https://github.com/SmollClover/Vocalhooks',
 		categories: ['application'],
 		keys: ['Webserver', 'Webhooks', 'Automated'],
@@ -54,7 +54,7 @@ export const projects: Array<Project> = [
 	{
 		name: 'Hexador',
 		description: 'A File encryption Program which always produces a random output which it can still decode',
-		imagePath: '/image/Placeholder.png',
+		imagePath: '/image/Hexador.png',
 		githubUrl: 'https://github.com/SmollClover/Hexador',
 		categories: ['application'],
 		keys: ['Encryption', 'Security'],
@@ -62,7 +62,7 @@ export const projects: Array<Project> = [
 	{
 		name: 'Neural Network',
 		description: 'A basic Neural Network Implementation in TypeScript',
-		imagePath: '/image/Placeholder.png',
+		imagePath: '/image/Neural-Network.png',
 		githubUrl: 'https://github.com/SmollClover/Neural-Network',
 		categories: ['other'],
 		keys: ['Neural Network', 'Machine Learning'],
