@@ -23,7 +23,7 @@ const ProjectCard: FunctionComponent<{
 				height={288}
 				layout="responsive"
 			/>
-			<p className="my-2 text-center">{name}</p>
+			<p className="pb-2 my-2 text-center">{name}</p>
 
 			{showDetail === name && (
 				<div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 md:p-10 rounded-2xl md:grid-cols-2 gap-x-12 bg-darker-800">
