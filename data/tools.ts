@@ -9,7 +9,7 @@ export const tools: Array<Tools> = [
 		LIcon: BsCircleFill,
 	},
 	{
-		name: 'WSL 2 (Ubuntu)',
+		name: 'Linux (Ubuntu)',
 		level: '100%',
 		LIcon: BsCircleFill,
 	},
@@ -19,13 +19,13 @@ export const tools: Array<Tools> = [
 		LIcon: BsCircleFill,
 	},
 	{
-		name: 'Fisher',
-		level: '45%',
+		name: 'Oh my Fish',
+		level: '50%',
 		LIcon: BsCircleFill,
 	},
 	{
-		name: 'Oh my Fish',
-		level: '40%',
+		name: 'Fisher',
+		level: '45%',
 		LIcon: BsCircleFill,
 	},
 ];
