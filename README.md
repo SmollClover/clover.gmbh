@@ -1,1 +1,1 @@
-# https://clover.gmbh/
+# https://clover.lgbt/

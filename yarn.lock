@@ -1274,9 +1274,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clover.gmbh@workspace:.":
+"clover.lgbt@workspace:.":
   version: 0.0.0-use.local
-  resolution: "clover.gmbh@workspace:."
+  resolution: "clover.lgbt@workspace:."
   dependencies:
     "@commitlint/cli": ^17.0.0
     "@commitlint/config-angular": ^17.0.0

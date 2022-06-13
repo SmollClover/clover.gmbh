@@ -1,6 +1,6 @@
 {
 	"version": "0.1.0",
-	"name": "clover.gmbh",
+	"name": "clover.lgbt",
 	"dependencies": {
 		"framer-motion": { "version": "6.3.3" },
 		"next-strict-csp": { "version": "1.0.1" },
