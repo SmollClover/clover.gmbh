@@ -5,7 +5,7 @@ import { Language } from '../interface/Language';
 export const languages: Array<Language> = [
 	{
 		name: 'TypeScript',
-		level: '75%',
+		level: '100%',
 		LIcon: BsCircleFill,
 	},
 	{
@@ -24,8 +24,8 @@ export const languages: Array<Language> = [
 		LIcon: BsCircleFill,
 	},
 	{
-		name: 'HTML & CSS',
-		level: '50%',
+		name: 'Java',
+		level: '30%',
 		LIcon: BsCircleFill,
 	},
 ];
