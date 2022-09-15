@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 				</div>
 
 				<div className="flex-grow bg-dark rounded-2xl">
-					<AnimatePresence exitBeforeEnter>
+					<AnimatePresence mode="wait">
 						<Component {...pageProps} key={router.route} />
 					</AnimatePresence>
 				</div>
